@@ -9,3 +9,7 @@
 <img src="static/img/referencje/r4.jpg" alt="referencje firmy Leski" class="cert">
 <hr class="breakline">
 <img src="static/img/referencje/r5.jpg" alt="referencje firmy Leski" class="cert">
+<hr class="breakline">
+<img src="static/img/referencje/r6.jpg" alt=" referencje firmy Leski" class="cert">
+<hr class="breakline">
+<img src="static/img/referencje/r7.jpg" alt=" referencje firmy Leski" class="cert">

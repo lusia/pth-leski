@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
-        <base href="http://www.leski.com.pl/">
+        <base href="http:/127.0.0.1:9025">
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<meta http-equiv="Content-Language" content="{ $zone }">
 		<meta name="msvalidate.01" content="D0B590972EC6AFC5645A435DF8DD888B" />
