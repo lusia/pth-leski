@@ -5,8 +5,8 @@ function __autoload($className){
 	require_once($path);
 }
 
-ini_set('display_errors','On');
-error_reporting(1);
+ini_set('display_errors','Off');
+error_reporting(0);
 
 header('Content-type: text/html;charset=UTF-8'); //naglowek przegladarki
 
