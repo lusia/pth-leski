@@ -1,0 +1,7 @@
+RewriteEngine On
+
+ RewriteBase /leski
+
+RewriteRule ^([a-zA-Z0-9_-]*[/]*)*$ index.php/$1
+
+
