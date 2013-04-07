@@ -1,2 +1,4 @@
 /_smarty/templates_c/*.php
 /.idea
+composer.phar
+vendor
