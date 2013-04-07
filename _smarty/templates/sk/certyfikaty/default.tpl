@@ -9,12 +9,4 @@
 		<td><img src="static/img/certyfikaty/tuv.jpg" alt="certyfikat ISO" class="cert"></td>
 		<td>ISO</td>
 	</tr>
-	<tr>
-		<td>
-			<a href="http://www.rzetelnafirma.pl/HLTUOP9I/1">
-				<img src="static/img/certyfikaty/rzetelna_firma_2.png" alt="certyfikat Rzetelna Firma" class="cert">
-			</a>
-		</td>
-		<td></td>
-	</tr>
 </table>		

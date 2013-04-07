@@ -25,8 +25,7 @@ class Controler{
 	public function randomCert(){
 		// losuje certyfikat z dostepnych
 		$cert =  array ( array('certImg'=>'tuv.jpg', 'certDesc'=>'Certyfikat TUV posiadany przez firmę Leski'),
-						 array('certImg'=>'fair_play.jpg','certDesc'=>'Certyfikat Fair Play posiadany przez firmę Leski'),
-						 array('certImg'=>'rzetelna_firma.png','certDesc'=>'Certyfikat Rzetelna Firma - posiadany przez firmę Leski')
+						 array('certImg'=>'fair_play.jpg','certDesc'=>'Certyfikat Fair Play posiadany przez firmę Leski')
 						);
 		$rand = rand(0, sizeof($cert)-1); 						
 		$this->mySmarty->assign('certImg',$cert[$rand]['certImg']);
