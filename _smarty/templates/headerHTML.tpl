@@ -17,5 +17,6 @@
 		<link href="static/css/default.css?version=1" rel="stylesheet" type="text/css">
  		<script type="text/javascript" src="static/js/jquery-1.2.6.js"></script>
 		<script type="text/javascript" src="static/js/fadeMin.js"></script>
+        <script type="text/javascript" src="static/js/whcookies.js"></script>
 	</head>
 <body>
