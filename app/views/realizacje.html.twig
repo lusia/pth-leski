@@ -1,5 +1,16 @@
-real
+{% extends "layout/layout.html.twig" %}
 
-g
-fdg
-fhg
+
+{% block content %}
+    <div class="header">
+        <h1>Realizacje</h1>
+    </div>
+    <div id="offer">
+        <a href="#" name="piece" title="piece"><img src="static/images/offer/kotlownie.jpg" alt="Kotłownie"></a>
+        <a href="#" name="solary" title="solary"><img src="static/images/offer/kolektory.jpg" alt="Kolektory słoneczne"></a>
+        <a href="#" name="fotowoltanika" title="fotowoltanika"><img src="static/images/offer/fotowoltanika.jpg" alt="Kolektory słoneczne"></a>
+        <a href="#" name="inne" title="inne"><img src="static/images/offer/inne.jpg" alt="Inne"></a>
+        <a href="#" name="pompy" title="pompy"><img src="static/images/offer/pompy-ciepla.jpg" alt="Pompy ciepła"></a>
+    </div>
+
+{% endblock %}

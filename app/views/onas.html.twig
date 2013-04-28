@@ -1,0 +1,95 @@
+{% extends "layout/layout.html.twig" %}
+
+{% block content %}
+
+    <div class="header">
+        <h1>O nas</h1>
+    </div>
+    <div class="opis">
+        <p>P.T.H. LESKI jest firmą budowlaną, specjalizującą się w wykonywaniu szeroko pojętych instalacji sanitarnych, funkcjonującą na rynku ogólnopolskim nieprzerwanie od 1986 roku.</p>
+        <br>
+
+        <p>Stawiamy na:</p>
+        <ul>
+            <li> solidność realizowanych zadań</li>
+            <li> terminowość realizacji podjętych zobowiązań</li>
+            <li> przestrzeganie standardów montażu</li>
+            <li> podnoszenie kwalifikacji pracowników</li>
+            <li> jakość realizowanych prac</li>
+            <li> wdrażanie nowoczesnych technologii montażu</li>
+        </ul>
+        <br>
+
+        <p>Rozwijając się na przestrzeni lat, poszerzając swoją ofertę ewoluowaliśmy z niewielkiego zakładu instalacyjnego do prężnie działającej firmy</p>
+    </div>
+    <div class="header">
+        <h2>Certyfikaty</h2>
+    </div>
+    <div class="image-list-container">
+        <div class="image-list">
+            <a href="static/images/certyfikaty/c1.jpg" rel="prettyPhoto[certyfikaty]">
+                <image src="static/images/certyfikaty/c1-small.jpg"/>
+            </a>
+        </div>
+        <div class="image-list">
+            <a href="static/images/certyfikaty/c2.jpg" rel="prettyPhoto[certyfikaty]">
+                <image src="static/images/certyfikaty/c2-small.jpg"/>
+            </a>
+        </div>
+        <div class="image-list">
+            <a href="static/images/certyfikaty/c3.jpg" rel="prettyPhoto[certyfikaty]">
+                <image src="static/images/certyfikaty/c3-small.jpg"/>
+            </a>
+        </div>
+        <div class="image-list">
+            <a href="static/images/certyfikaty/c4.jpg" rel="prettyPhoto[certyfikaty]">
+                <image src="static/images/certyfikaty/c4-small.jpg"/>
+            </a>
+        </div>
+        <div class="image-list">
+            <a href="static/images/certyfikaty/fair_play.jpg" rel="prettyPhoto[certyfikaty]">
+                <image src="static/images/certyfikaty/fair_play-small.jpg"/>
+            </a>
+        </div>
+        <div class="image-list">
+            <a href="static/images/certyfikaty/tuv.jpg" rel="prettyPhoto[certyfikaty]">
+                <image src="static/images/certyfikaty/tuv-small.jpg"/>
+            </a>
+        </div>
+    </div>
+    <div class="header group cb">
+        <h2>Referencje</h2>
+    </div>
+    <div class="image-list-container">
+        <div class="image-list">
+            <a href="static/images/referencje/r3.jpg" rel="prettyPhoto[referencje]">
+                <image src="static/images/referencje/r3-small.jpg"/>
+            </a>
+        </div>
+        <div class="image-list">
+            <a href="static/images/referencje/r4.jpg" rel="prettyPhoto[referencje]">
+                <image src="static/images/referencje/r4-small.jpg"/>
+            </a>
+        </div>
+        <div class="image-list">
+            <a href="static/images/referencje/r5.jpg" rel="prettyPhoto[referencje]">
+                <image src="static/images/referencje/r5-small.jpg"/>
+            </a>
+        </div>
+        <div class="image-list">
+            <a href="static/images/referencje/r2.jpg" rel="prettyPhoto[referencje]">
+                <image src="static/images/referencje/r2-small.jpg"/>
+            </a>
+        </div>
+        <div class="image-list">
+            <a href="static/images/referencje/r1.jpg" rel="prettyPhoto[referencje]">
+                <image src="static/images/referencje/r1-small.jpg"/>
+            </a>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block side_bar %}
+    {% include "left_side_bar_recomedation/recomedation.html.twig" %}
+{% endblock %}

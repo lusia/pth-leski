@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*http://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,latin-ext&v2*/
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('http://tcs3ser.pl/bundles/tcscms/font/ubuntu-bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Ubuntu'), url('http://tcs3ser.pl/bundles/tcscms/font/ubuntu.ttf') format('truetype');
+}
