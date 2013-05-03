@@ -5,13 +5,20 @@
     <div class="header">
         <h1>Oferta</h1>
     </div>
-        <div id="offer">
-            <a href="#" name="piece" title="piece"><img src="static/images/offer/kotlownie.jpg" alt="Kotłownie"></a>
-            <a href="#" name="solary" title="solary"><img src="static/images/offer/kolektory.jpg" alt="Kolektory słoneczne"></a>
-            <a href="#" name="fotowoltanika" title="fotowoltanika"><img src="static/images/offer/fotowoltanika.jpg" alt="Kolektory słoneczne"></a>
-            <a href="#" name="inne" title="inne"><img src="static/images/offer/inne.jpg" alt="Inne"></a>
-            <a href="#" name="pompy" title="pompy"><img src="static/images/offer/pompy-ciepla.jpg" alt="Pompy ciepła"></a>
-        </div>
+    <div id="offer">
+        <a href="{{ url('page', {url: 'oferta/kotlownie'}) }}" name="piece" title="piece">
+            <img src="/static/images/offer/kotlownie.jpg" alt="Kotłownie">
+        </a>
+        <a href="{{ url('page', {url: 'oferta/kolektory_sloneczne'}) }}" name="solary" title="solary">
+            <img src="/static/images/offer/kolektory.jpg" alt="Kolektory słoneczne">
+        </a>
+        <a href="{{ url('page', {url: 'oferta/fotowoltanika'}) }}" name="fotowoltanika" title="fotowoltanika">
+            <img src="/static/images/offer/fotowoltanika.jpg" alt="Kolektory słoneczne">
+        </a>
+        <a href="{{ url('page', {url: 'oferta/pompy_ciepla'}) }}" name="pompy" title="pompy">
+            <img src="/static/images/offer/pompy-ciepla.jpg" alt="Pompy ciepła">
+        </a>
+    </div>
 
 
 

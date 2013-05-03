@@ -19,12 +19,12 @@ $(function (){
     
     //hilight menu
     $('div.menu').mouseover(function () {
-        $(this).css('backgroundImage', 'url(/bundles/leskiwebpage/images/menu_on.png)');
+        $(this).css('backgroundImage', 'url(../static/images/menu_on.png)');
     });
     $('div.menu').mouseleave(function () {
-        var image = 'url(/bundles/leskiwebpage/images/menu_off.png)';
+        var image = 'url(../static/images/menu_off.png)';
         if ($(this).hasClass('active')) {
-            image = 'url(/bundles/leskiwebpage/images/menu_active.png)';
+            image = 'url(../static/images/menu_active.png)';
         } 
         $(this).css('backgroundImage', image);
     });

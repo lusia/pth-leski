@@ -1,35 +1,45 @@
 {% extends "layout/layout.html.twig" %}
 {% block content %}
 
-<div class="header">
-    <h1>Kontakt</h1>
-</div>
+    <div class="header">
+        <h1>Kontakt</h1>
+    </div>
 
-<div id="contact">
-    <br>
-    <ul>
-        <li>
-            <strong>PTH "Leski" Remigiusz Leski</strong><br>
-            ul.Królowej Jadwigi 80A<br>
-            34-400 Nowy Targ,<br>
-            tel./fax 0-18 266 92 26<br>
-            NIP 735-000-40-02<br>
-            REGON 004406638<br>
-            <a href="http://www.leski.com.pl" class="link">http://www.leski.com.pl</a><br>
-        </li>
-        <li>
-        <strong>Dział techniczny</strong><br>
-        tel 0-18 266 92 26<br>
-        <a href="#" ref="1" class="link jqsMail">wyślij wiadomość</a><br>
+    <div id="contact">
         <br>
-        <strong>Oddział Kraków - Olkusz</strong><br>
-        tel 0-18 266 92 26<br>
-        <a href="#" ref="2" class="link jqsMail">wyślij wiadomość</a><br>
-        </li>
+        <ul>
+            <li>
+                <strong>PTH "Leski" Remigiusz Leski</strong><br>
+                ul.Królowej Jadwigi 80A<br>
+                34-400 Nowy Targ,<br>
+                tel./fax 0-18 266 92 26<br>
+                NIP 735-000-40-02<br>
+                REGON 004406638<br>
+                <a href="http://www.leski.com.pl" class="link">http://www.leski.com.pl</a><br>
+            </li>
+            <li>
+                <strong>Dział techniczny</strong><br>
+                tel 0-18 266 92 26<br>
+                <br>
+                <strong>Oddział Kraków - Olkusz</strong><br>
+                tel 0-18 266 92 26<br>
+                <br>
+            </li>
         </ul>
+    </div>
+    <br>
+    <br>
+    <div id="mp">
+        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.dk/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=Kr%C3%B3lowej+Jadwigi+80A,+Nowy+Targ,+Polska+PTH+Leski&amp;aq=&amp;sll=49.478916,20.022626&amp;sspn=0.005542,0.01545&amp;g=Kr%C3%B3lowej+Jadwigi+80A,+Nowy+Targ,+Polska&amp;ie=UTF8&amp;hq=PTH+Leski&amp;hnear=Kr%C3%B3lowej+Jadwigi+80A,+Nowy+Targ,+nowotarski,+ma%C5%82opolskie,+Polska&amp;t=m&amp;cid=12149027219094322342&amp;ll=49.484242,20.026789&amp;spn=0.019572,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+        <br/>
+        <small><a href="https://maps.google.dk/maps?f=q&amp;source=embed&amp;hl=pl&amp;geocode=&amp;q=Kr%C3%B3lowej+Jadwigi+80A,+Nowy+Targ,+Polska+PTH+Leski&amp;aq=&amp;sll=49.478916,20.022626&amp;sspn=0.005542,0.01545&amp;g=Kr%C3%B3lowej+Jadwigi+80A,+Nowy+Targ,+Polska&amp;ie=UTF8&amp;hq=PTH+Leski&amp;hnear=Kr%C3%B3lowej+Jadwigi+80A,+Nowy+Targ,+nowotarski,+ma%C5%82opolskie,+Polska&amp;t=m&amp;cid=12149027219094322342&amp;ll=49.484242,20.026789&amp;spn=0.019572,0.036478&amp;z=14&amp;iwloc=A"
+                  style="color:#0000FF;text-align:left"></a></small>
     </div>
 
 
-        {% endblock %}
+{% endblock %}
 
-
+{% block side_bar %}
+    {% include "left_side_bar/recomedation.html.twig" %}
+{% endblock %}

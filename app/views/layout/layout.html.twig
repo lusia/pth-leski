@@ -1,67 +1,76 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-        <link href="static/css/reset.css" rel="stylesheet" type="text/css">
-        <link href="static/css/default.css" rel="stylesheet" type="text/css">
-        <link href="static/css/style.css" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" href="static/images/favicon.ico" />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-        <meta name="description" content="{% block description %}{% endblock %}">
-        <meta name="keywords" content="{% block keywords %}pompy ciepła, instalacje solarne, solary, fotovoltanika, wewnętrzne i zewnętrzne instalacje sanitarne, centralne ogrzewanie, gaz, instalacje pary technologicznej, kotłownie olejowo - gazowe oraz węzły wymiennikowe, wentylacje i klimatyzacje, kolektory słoneczne, pompy ciepła, ekspertyzy i doradztwo techniczne, jakość{% endblock %}">
-        <title>{% block title %}Leski - Przedsiebiorstwo Techniczno-Handlowe Nowy Targ{% endblock %}</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="static/js/jquery.prettyPhoto.js"></script>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="/static/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/default.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="/static/images/favicon.ico"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="keywords" content="{% block keywords %}pompy ciepła, instalacje solarne, solary, fotovoltanika, wewnętrzne i zewnętrzne instalacje sanitarne, centralne ogrzewanie, gaz, instalacje pary technologicznej, kotłownie olejowo - gazowe oraz węzły wymiennikowe, wentylacje i klimatyzacje, kolektory słoneczne, pompy ciepła, ekspertyzy i doradztwo techniczne, jakość{% endblock %}">
+    <title>{% block title %}Leski - Przedsiebiorstwo Techniczno-Handlowe Nowy Targ{% endblock %}</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/static/js/jquery.prettyPhoto.js"></script>
 
-        <script src="static/js/all.js"></script>
-        {% block head %}{% endblock %}
-    </head>
-    <body>
-        <div id="page">
-            <div class="rightColumn">
-                <img alt="" src="static/images/header_pl.png">
-                <div id="cycle-photo">
-                    <div class="slideshow">
-                        <img alt="" src="static/images/header/1.jpg">
-                        {#<img alt="" class="hide" src="static/images/header/2.jpg">#}
-                        {#<img alt="" class="hide" src="static/images/header/3.jpg">#}
-                        {#<img alt="" class="hide" src="static/images/header/4.jpg">#}
-                        {#<img alt="" class="hide" src="static/images/header/5.jpg">#}
-                        {#<img alt="" class="hide" src="static/images/header/6.jpg">#}
-                        {#<img alt="" class="hide" src="static/images/header/7.jpg">#}
-                        {#<img alt="" class="hide" src="static/images/header/8.jpg">#}
-                        {#<img alt="" class="hide" src="static/images/header/9.jpg">#}
-                        {#<img alt="" class="hide" src="static/images/header/10.jpg">#}
-                    </div>
-                </div>
-                {% block content %}{% endblock %}
+    <script src="/static/js/all.js"></script>
+    {% block head %}{% endblock %}
+</head>
+<body>
+<div id="page">
+    <div class="rightColumn">
+        <img alt="" src="/static/images/header_pl.png">
+
+        <div id="cycle-photo">
+            <div class="slideshow">
+                <img alt="" src="/static/images/header/1.jpg">
+                {#<img alt="" class="hide" src="/static/images/header/2.jpg">#}
+                {#<img alt="" class="hide" src="/static/images/header/3.jpg">#}
+                {#<img alt="" class="hide" src="static/images/header/4.jpg">#}
+                {#<img alt="" class="hide" src="static/images/header/5.jpg">#}
+                {#<img alt="" class="hide" src="static/images/header/6.jpg">#}
+                {#<img alt="" class="hide" src="static/images/header/7.jpg">#}
+                {#<img alt="" class="hide" src="static/images/header/8.jpg">#}
+                {#<img alt="" class="hide" src="static/images/header/9.jpg">#}
+                {#<img alt="" class="hide" src="static/images/header/10.jpg">#}
             </div>
-            <div class="leftColumn">
-                <img alt="" src="static/images/logo_pl.png">
-
-                <div class="menu off"><a href="{{ url('page', {url: 'oferta'})}}" title="Informacje na temat oferty handlowej i wykonawczej firmy PTH LESKI">Oferta</a></div>
-                <div class="menu off"><a href="{{ url('page', {url: 'onas'})}}" title="Historia firmy PTH  LESKI, od małego przedsiębiorstwa do prężnej firmy">O nas</a></div>
-                <div class="menu off"><a href="{{ url('page', {url: 'realizacje'})}}" title="Spis niektórych realizacji wykonanych przez PTH LESKI">Realizacje</a></div>
-                <div class="menu off"><a href="{{ url('page', {url: 'kontakt'})}}" title="Kontakt z firmą PTH LESKI - dane teleadresowe oraz formularz kontaktowty">Kontakt</a></div>
-                {% block side_bar %}{% endblock %}
-
-            </div>
-            <div class="bottom"></div>
         </div>
-        <div class="fotter">
-            <img alt="" src="static/images/bottom.png">
-            <span>Realizacja <a href="http://www.danat.dk" title="">danat.dk</a></span>
-        </div>
+        {% block content %}{% endblock %}
+    </div>
+    <div class="leftColumn">
+        <img alt="" src="/static/images/logo_pl.png">
+
+        <a href="{{ url('page', {url: 'oferta'}) }}" title="Informacje na temat oferty handlowej i wykonawczej firmy PTH LESKI">
+            <div class="menu off">Oferta</div>
+        </a>
+        <a href="{{ url('page', {url: 'onas'}) }}" title="Historia firmy PTH  LESKI, od małego przedsiębiorstwa do prężnej firmy">
+            <div class="menu off">O nas</div>
+        </a>
+        <a href="{{ url('page', {url: 'realizacje'}) }}" title="Spis niektórych realizacji wykonanych przez PTH LESKI">
+            <div class="menu off">Realizacje</div>
+        </a>
+        <a href="{{ url('page', {url: 'kontakt'}) }}" title="Kontakt z firmą PTH LESKI - dane teleadresowe oraz formularz kontaktowty">
+            <div class="menu active">Kontakt</div>
+        </a>
+        {% block side_bar %}{% endblock %}
+
+    </div>
+    <div class="bottom"></div>
+</div>
+<div class="fotter">
+    <img alt="" src="/static/images/bottom.png">
+    <span>Realizacja <a href="http://www.danat.dk" title="">danat.dk</a></span>
+</div>
 
 
-        <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
-        var pageTracker = _gat._getTracker("UA-5536912-1");
-        pageTracker._trackPageview();
-        </script>
-    </body>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-5536912-1");
+    pageTracker._trackPageview();
+</script>
+</body>
 </html>
