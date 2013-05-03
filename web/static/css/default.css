@@ -160,6 +160,7 @@ img.menuBottom {
 
 a.blackLink {
     color: black;
+    text-decoration: none;
 }
 
 div.opis {
@@ -296,14 +297,24 @@ div.solarRight {
 .divActive {
     background-color: #A8CCDD;
     font-weight: bold;
+    border-radius: 3px;
 }
 
 .divUnActive {
     background-color: #CAE0EA;
+    border-radius: 3px;
 }
 
 .solarContentLeft {
     padding-left: 100px;
+}
+
+.opis_kolektorow {
+    width: 555px;
+}
+
+div.opis_kolektorow p {
+    text-align: justify;
 }
 
 .solarContentRight {

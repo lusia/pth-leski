@@ -3,12 +3,16 @@
 
 {% block content %}
     <div class="header">
-        <h1>Oferta dotycząca kolektorów słonecznych</h1>
+        <h1>Kolektory słoneczne i systemy solarne</h1>
     </div>
-    <div class="opis">
-    <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
-        delenit augue duis dolore te feugait nulla facilisi.
-    </p>
+    <div class="solarLeft divActive">
+        <p class="solarContentLeft">
+            <a href="{{ url('page', {url: 'oferta/kolektory_sloneczne/stacjonarne'}) }}" class="blackLink" title="Leski PTH kolektory słoneczne stacjonarne">Stacjonarne</a>
+        </p>
+    </div>
+    <div class="solarRight divUnActive">
+        <p class="solarContentRight">
+            <a href="{{ url('page',{url: 'oferta/kolektory_sloneczne/nadazne'}) }}" class="blackLink" title="Leski PTH kolektory słoneczne podążdjące za słońcem">Nadążne</a>
+        </p>
     </div>
 {% endblock %}
