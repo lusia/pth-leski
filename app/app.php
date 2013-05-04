@@ -26,6 +26,25 @@ $dispatcher = function ($url = '') use ($app)  {
 $app->get('/', $dispatcher);
 $app->get('/{url}', $dispatcher)->assert('url', '.+')->bind('page');
 
+$app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
+
+	$function = new Twig_SimpleFunction('ifUrlStartsWithThenReturn', function ($start, $return = '', $else = '') use ($app) {
+		$url = strtolower($app['request']->attributes->get('url'));
+		$start = strtolower($start);
+		$out = $else;
+
+		if (strpos($url, $start) === 0) {
+			$out = $return;
+		}
+
+		return $out;
+	});
+	$twig->addFunction($function);
+	$twig->addGlobal('baseHostAndUrl', $app['request']->getUriForPath('')); //trick to run without vhost
+
+	return $twig;
+}));
+
 $app->error(function(\Exception $e) use ($app) {
 	return 'error';
 });

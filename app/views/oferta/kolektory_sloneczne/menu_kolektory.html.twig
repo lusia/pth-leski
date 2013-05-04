@@ -1,7 +1,7 @@
 <div class="header">
     <h1>Kolektory słoneczne i systemy solarne</h1>
 </div>
-<div class="solarLeft divActive">
+<div class="solarLeft {{ ifUrlStartsWithThenReturn('oferta/kolektory_sloneczne/stacjonarne', 'divActive', 'divUnActive') }}">
     <a href="{{ url('page', {url: 'oferta/kolektory_sloneczne/stacjonarne'}) }}" class="blackLink" title="Leski PTH kolektory słoneczne stacjonarne">
         <p class="solarContentLeft">Stacjonarne</p>
     </a>

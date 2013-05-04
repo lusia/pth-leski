@@ -2,9 +2,9 @@
 <html>
 <head>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link href="/static/css/reset.css" rel="stylesheet" type="text/css">
-    <link href="/static/css/default.css" rel="stylesheet" type="text/css">
-    <link href="/static/css/style.css" rel="stylesheet" type="text/css">
+    <link href="{{ baseHostAndUrl }}/static/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="{{ baseHostAndUrl }}/static/css/default.css" rel="stylesheet" type="text/css">
+    <link href="{{ baseHostAndUrl }}/static/css/style.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="/static/images/favicon.ico"/>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
@@ -12,9 +12,9 @@
     <meta name="keywords" content="{% block keywords %}pompy ciepła, instalacje solarne, solary, fotovoltanika, wewnętrzne i zewnętrzne instalacje sanitarne, centralne ogrzewanie, gaz, instalacje pary technologicznej, kotłownie olejowo - gazowe oraz węzły wymiennikowe, wentylacje i klimatyzacje, kolektory słoneczne, pompy ciepła, ekspertyzy i doradztwo techniczne, jakość{% endblock %}">
     <title>{% block title %}Leski - Przedsiebiorstwo Techniczno-Handlowe Nowy Targ{% endblock %}</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/static/js/jquery.prettyPhoto.js"></script>
+    <script src="{{ baseHostAndUrl }}/static/js/jquery.prettyPhoto.js"></script>
 
-    <script src="/static/js/all.js"></script>
+    <script src="{{ baseHostAndUrl }}/static/js/all.js"></script>
     {% block head %}{% endblock %}
 </head>
 <body>
@@ -42,16 +42,16 @@
         <img alt="logo" src="/static/images/logo_pl.png">
 
         <a href="{{ url('page', {url: 'oferta'}) }}" title="Informacje na temat oferty handlowej i wykonawczej firmy PTH LESKI">
-            <div class="menu off">Oferta</div>
+            <div class="menu {{ ifUrlStartsWithThenReturn('oferta', 'active', 'off') }}">Oferta</div>
         </a>
         <a href="{{ url('page', {url: 'onas'}) }}" title="Historia firmy PTH  LESKI, od małego przedsiębiorstwa do prężnej firmy">
             <div class="menu off">O nas</div>
         </a>
         <a href="{{ url('page', {url: 'realizacje'}) }}" title="Spis niektórych realizacji wykonanych przez PTH LESKI">
-            <div class="menu off">Realizacje</div>
+            <div class="menu {{ ifUrlStartsWithThenReturn('realizacje', 'active', 'off') }}">Realizacje</div>
         </a>
         <a href="{{ url('page', {url: 'kontakt'}) }}" title="Kontakt z firmą PTH LESKI - dane teleadresowe oraz formularz kontaktowty">
-            <div class="menu active">Kontakt</div>
+            <div class="menu {{ ifUrlStartsWithThenReturn('kontakt', 'active', 'off') }}">Kontakt</div>
         </a>
         {% block side_bar %}{% endblock %}
 
