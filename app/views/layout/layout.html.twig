@@ -45,7 +45,7 @@
             <div class="menu {{ ifUrlStartsWithThenReturn('oferta', 'active', 'off') }}">Oferta</div>
         </a>
         <a href="{{ url('page', {url: 'onas'}) }}" title="Historia firmy PTH  LESKI, od małego przedsiębiorstwa do prężnej firmy">
-            <div class="menu off">O nas</div>
+            <div class="menu {{ ifUrlStartsWithThenReturn('onas', 'active', 'off') }}">O nas</div>
         </a>
         <a href="{{ url('page', {url: 'realizacje'}) }}" title="Spis niektórych realizacji wykonanych przez PTH LESKI">
             <div class="menu {{ ifUrlStartsWithThenReturn('realizacje', 'active', 'off') }}">Realizacje</div>

@@ -6,7 +6,7 @@
         <p class="solarContentLeft">Stacjonarne</p>
     </a>
 </div>
-<div class="solarRight divUnActive">
+<div class="solarRight {{ ifUrlStartsWithThenReturn('oferta/kolektory_sloneczne/nadazne', 'divActive', 'divUnActive') }}">
     <a href="{{ url('page',{url: 'oferta/kolektory_sloneczne/nadazne'}) }}" class="blackLink" title="Leski PTH kolektory słoneczne podążdjące za słońcem">
         <p class="solarContentRight">Nadążne</p>
     </a>
