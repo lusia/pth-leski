@@ -4,7 +4,7 @@ $(function (){
 
     href = href.split('#')[0];
 
-//    $(".rslides").responsiveSlides();
+    $(".rslides").responsiveSlides();
 
     //find active menu
     $('div.menu a').map(function() {
