@@ -1,13 +1,11 @@
 $(function (){
-    var addressPart = window.location.href.split('/');
-    href = addressPart.slice(0, 4).join('/');
+    var addressPart = window.location.href.split('/'),
+        href = addressPart.slice(0, 4).join('/');
+
     href = href.split('#')[0];
 
-    //cycle on header image
-    $('.slideshow').cycle({
-		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-	});
-    
+//    $(".rslides").responsiveSlides();
+
     //find active menu
     $('div.menu a').map(function() {
         var $this = $(this);
@@ -17,7 +15,7 @@ $(function (){
         }
     });
     
-    //hilight menu
+    //highlight menu
     $('div.menu').mouseover(function () {
         $(this).css('backgroundImage', 'url(../static/images/menu_on.png)');
     });

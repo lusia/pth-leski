@@ -5,6 +5,7 @@
     <link href="{{ baseHostAndUrl }}/static/css/reset.css" rel="stylesheet" type="text/css">
     <link href="{{ baseHostAndUrl }}/static/css/default.css" rel="stylesheet" type="text/css">
     <link href="{{ baseHostAndUrl }}/static/css/style.css" rel="stylesheet" type="text/css">
+    <link href="{{ baseHostAndUrl }}/static/third/slider/responsiveslides.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="/static/images/favicon.ico"/>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
@@ -15,6 +16,7 @@
     <script src="{{ baseHostAndUrl }}/static/js/jquery.prettyPhoto.js"></script>
 
     <script src="{{ baseHostAndUrl }}/static/js/all.js"></script>
+    <script src="{{ baseHostAndUrl }}/static/third/slider/responsiveslides.min.js"></script>
     {% block head %}{% endblock %}
 </head>
 <body>
@@ -23,18 +25,11 @@
         <img alt="" src="/static/images/header_pl.png">
 
         <div id="cycle-photo">
-            <div class="slideshow">
-                <img alt="" src="/static/images/header/1.jpg">
-                {#<img alt="" class="hide" src="/static/images/header/2.jpg">#}
-                {#<img alt="" class="hide" src="/static/images/header/3.jpg">#}
-                {#<img alt="" class="hide" src="static/images/header/4.jpg">#}
-                {#<img alt="" class="hide" src="static/images/header/5.jpg">#}
-                {#<img alt="" class="hide" src="static/images/header/6.jpg">#}
-                {#<img alt="" class="hide" src="static/images/header/7.jpg">#}
-                {#<img alt="" class="hide" src="static/images/header/8.jpg">#}
-                {#<img alt="" class="hide" src="static/images/header/9.jpg">#}
-                {#<img alt="" class="hide" src="static/images/header/10.jpg">#}
-            </div>
+            <ul class="rslides">
+                {% for i in 1..10 %}
+                    <li><img alt="" src="/static/images/header/{{ i }}.jpg"></li>
+                {% endfor %}
+            </ul>
         </div>
         {% block content %}{% endblock %}
     </div>

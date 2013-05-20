@@ -376,6 +376,8 @@ div.leftBox a, div.leftBox a:visited {
 
 div#cycle-photo {
     height: 275px;
+    width: 570px;
+    margin-left: -1px;
 }
 
 .hide {
