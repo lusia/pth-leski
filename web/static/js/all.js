@@ -17,12 +17,12 @@ $(function (){
     
     //highlight menu
     $('div.menu').mouseover(function () {
-        $(this).css('backgroundImage', 'url(../static/images/menu_on.png)');
+        $(this).css('backgroundImage', 'url(/static/images/menu_on.png)');
     });
     $('div.menu').mouseleave(function () {
-        var image = 'url(../static/images/menu_off.png)';
+        var image = 'url(/static/images/menu_off.png)';
         if ($(this).hasClass('active')) {
-            image = 'url(../static/images/menu_active.png)';
+            image = 'url(/static/images/menu_active.png)';
         } 
         $(this).css('backgroundImage', image);
     });
@@ -31,4 +31,10 @@ $(function (){
     $('div.menu').click(function () {
         window.location = $(this).children('a').attr('href');
     });
+
+
+    $(".showAble").mouseover(function(){
+        $("#show").attr("src", this.src);
+    });
+
 });

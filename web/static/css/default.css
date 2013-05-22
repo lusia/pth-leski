@@ -91,8 +91,16 @@ div.header {
     font-weight: bold;
     border-radius: 5px;
 }
+
+div.oferta_header {
+    width: 560px;
+    text-align: justify;
+    font-style: italic;
+}
+
 img.slides_header {
     border-radius: 0 0 0 25px;
+    behavior: url("/static/pie/PIE.htc");
 }
 
 div.opis {
@@ -379,7 +387,7 @@ div.leftBox a, div.leftBox a:visited {
 
 div#cycle-photo {
     height: 275px;
-    width: 570px;
+    width: 571px;
     margin-left: -1px;
 }
 
@@ -387,11 +395,35 @@ div#cycle-photo {
     display: none;
 }
 
+div.offer_image {
+    position: relative;
+    width: 255px;
+}
+
+div.blue_square {
+    width: 255px;
+    height: 25px;
+    position: absolute;
+    top: 144px;
+    left: 10px;
+    background-color: #4169e1;
+    color: #ffffff;
+    text-align: center;
+}
+
 div#offer img {
     margin: 10px;
     cursor: pointer;
-    float: left;
     width: 255px;
+
+}
+
+div.opis_oferty {
+    position: absolute;
+    top: 5px;
+    left: 290px;
+    width: 255px;
+    text-align: justify;
 }
 
 div#contact ul {
@@ -421,8 +453,6 @@ form ul li {
 form ul {
     margin-left: 0;
 }
-
-/*overwrite some styles */
 
 div.pp_default .pp_description {
     text-align: justify;
